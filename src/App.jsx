@@ -37,12 +37,11 @@ function App() {
       isFavorite: false,
     },
   ];
-  
+
   return (
     <article>
       <h1>Wild Restaurant Menu</h1>
-      {/* pass the variable foodItems as props to MenuList component */}
-      <MenuList />
+      <MenuList foodItems={foodItems} />
     </article>
   );
 }
